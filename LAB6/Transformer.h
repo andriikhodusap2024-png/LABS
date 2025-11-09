@@ -2,6 +2,11 @@
 #include <iostream>
 #include <array>
 #include <string>
+#include <cstddef>
+#define NOMINMAX
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#undef byte
 using namespace std;
 
 

@@ -1,5 +1,11 @@
 #include "Transformer.h"
 #include <windows.h>
+#include <cstddef>
+#define NOMINMAX
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#undef byte  
+
 
 int main() {
     SetConsoleOutputCP(65001);  
