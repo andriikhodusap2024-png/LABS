@@ -1,15 +1,14 @@
-// main.cpp
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <iomanip>
-#include <windows.h> // для SetConsoleOutputCP
+#include <windows.h> 
 
 #include "Cone.h"
 
 int main() {
 
-    // Увімкнути UTF-8 в консолі Windows
+    
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
@@ -46,7 +45,7 @@ int main() {
             std::cout << i + 1 << ": " << cones[i] << "\n";
         }
 
-        // Сортування за спаданням об'єму
+        
         std::sort(cones.begin(), cones.end(),
                   [](const Cone& a, const Cone& b) {
                       return a.getVolume() > b.getVolume();
@@ -57,7 +56,7 @@ int main() {
             std::cout << i + 1 << ": " << cones[i] << "\n";
         }
 
-        // Обчислення середніх значень
+        
         double sumR = 0.0;
         double sumH = 0.0;
 
@@ -73,7 +72,7 @@ int main() {
         std::cout << "\nСередній радіус: " << avgR << "\n";
         std::cout << "Середня висота: " << avgH << "\n";
 
-        // Використання оператора +
+        
         if (cones.size() >= 2) {
             Cone sumCone = cones[0] + cones[1];
 
@@ -83,7 +82,6 @@ int main() {
             std::cout << "Сума:    " << sumCone << "\n";
         }
 
-        // Перевірка оператора <=
         if (cones.size() >= 2) {
             std::cout << "\nПеревірка: об'єм першого конуса "
                       << (cones[0] <= cones[1] ? "<=" : ">")

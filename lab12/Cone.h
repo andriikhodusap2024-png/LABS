@@ -1,4 +1,3 @@
-// Cone.h
 #pragma once
 
 #include <iostream>
@@ -12,7 +11,6 @@ private:
 public:
     Cone();
     Cone(double r, double h);
-    // ~Cone();  <-- ВИДАЛИТИ ЦЕ
 
     double getRadius() const;
     double getHeight() const;
