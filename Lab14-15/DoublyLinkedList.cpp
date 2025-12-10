@@ -139,5 +139,6 @@ void DoublyLinkedList::displayBackward() const {
         cur->data.print();
         std::cout << "\n";
         cur = cur->prev;
-    }
+    } 
+    
 }

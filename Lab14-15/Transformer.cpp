@@ -8,4 +8,6 @@ void Transformer::print() const {
     std::cout << "Трансформатор: коефіцієнт=" << ratio
               << ", первинна напруга=" << primaryVoltage
               << " В, потужність=" << power << " Вт";
+              
 }
+

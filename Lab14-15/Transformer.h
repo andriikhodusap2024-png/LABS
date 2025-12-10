@@ -19,4 +19,5 @@ public:
     double getPower() const { return power; }
 };
 
+
 #endif
